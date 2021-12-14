@@ -1,0 +1,70 @@
+@import url('/fonts/fonts.css');
+
+@import url('https://css.gg/css');
+/* UNPKG */
+@import url('https://unpkg.com/css.gg/icons/all.css');
+/* JSDelivr */
+@import url('https://cdn.jsdelivr.net/npm/css.gg/icons/all.css');
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: inter-bold;
+}
+
+h1 {font-size: 2rem;}
+
+div#container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 200;
+	font-family: inter;
+}
+
+body {background: #434;}
+/*HEADER*/
+header {
+	width: 100vw;
+	background: rgba(0, 0, 0,.3);
+	padding: 10px 0px;
+	color: #fff;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header img {
+	height: 5vh;
+	margin: 10px 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+nav li a {
+	background: rgba(0, 0, 0, .4);
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-weight: 500;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+/*MAIN*/
+article {
+	width: 90vw;
+	margin: 20px 0px;
+	color: #eee;
+}
+footer{
+	width: 100vw;
+	height: 10vh;
+	background: #424;
+}

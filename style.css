@@ -1,11 +1,9 @@
 @import url('/fonts/fonts.css');
-
+/*
 @import url('https://css.gg/css');
-/* UNPKG */
 @import url('https://unpkg.com/css.gg/icons/all.css');
-/* JSDelivr */
 @import url('https://cdn.jsdelivr.net/npm/css.gg/icons/all.css');
-
+*/
 h1,h2,h3,h4,h5,h6 {
 	font-family: inter-bold;
 }
@@ -27,17 +25,19 @@ div#container {
 	font-family: inter;
 }
 
-body {background: #434;}
+body {background: #fff;}
 /*HEADER*/
 header {
 	width: 100vw;
-	background: rgba(0, 0, 0,.3);
+	height: 5vh;
+	background: #fff;
 	padding: 10px 0px;
 	color: #fff;
 
 	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 header img {
 	height: 5vh;
@@ -49,22 +49,43 @@ nav ul li{
 	list-style: none;
 }
 nav li a {
-	background: rgba(0, 0, 0, .4);
-	border-radius: 10px;
 	padding: 10px 20px;
 	font-weight: 500;
 	margin-right: 20px;
 	text-decoration: none;
-	color: #fff;
+	color: #393939;
 }
 /*MAIN*/
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+article,aside {
+	width: 50vw;
+	height: 80vh;
+}
+article img {width: 100%;}
 article {
-	width: 90vw;
+	background: url('./img/banner1.png');
+	background-size: 100%;
+	color: #393939;
+}
+aside {
 	margin: 20px 0px;
-	color: #eee;
+	background: #01272D;
+	color: #393939;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 footer{
 	width: 100vw;
 	height: 10vh;
 	background: #424;
+}
+aside .titulo {
+	width: 50%;
+
 }
